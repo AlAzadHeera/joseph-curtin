@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top_bar{
+    background: rgb(59,48,74);
+    background: linear-gradient(137deg, rgba(59,48,74,1) 35%, rgba(47,37,62,1) 100%);
+    min-height: 150px;
+    width: 98vw;
+}
+
+.nav_bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.yellow_circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #fee97f;
+    margin: 0 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 15px;
+    text-align: center;
+}
+
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    margin-top: 5px;
+    transition: .5s ease;
+}
+
+nav ul li:hover::after,
+nav ul li.active::after {
+    background-color: #fee97f;
+}
+
+.title_text {
+    padding: 0 0 60px 3%;
+}
+
+.title_text h1{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.title_text_yellow_bg
+{
+    color: #fee97f;
+    font-size: 25px;
+}
+
